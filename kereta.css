@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ADD8E6;
+}
+
+.hero {
+    background-image: url('https://example.com/kereta-bg.jpg'); /* Ganti dengan URL gambar kereta */
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: calc(100% / 3 - 40px); /* 3 card dalam satu baris pada desktop */
+    box-sizing: border-box;
+    text-decoration: none; /* Hapus garis bawah */
+    color: black; /* Warna teks */
+    transition: transform 0.3s;
+    background-size: cover; /* Mengatur ukuran gambar */
+    background-position: center; /* Mengatur posisi gambar */
+    height: 200px; /* Tinggi card */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(100% / 2 - 40px); /* 2 card dalam satu baris pada tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 40px); /* 1 card dalam satu baris pada hp */
+    }
+}
